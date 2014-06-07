@@ -18,7 +18,7 @@
 	    
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -49,33 +49,25 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-<div ng-controller="NotesController as notes" class="container">
-	
-		<!--
-		<div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">FY2014 School District Notes</h3>
-      </div>
-  		-->
-<h1>{{notes.engagement.name}}</h1>
+<div ng-controller="NotesController as notes" class="container-fluid row">
+
+<div id="na_preview" class="col-md-6" >
 <h2>NOTE 1:  DESCRIPTION OF SCHOOL DISTRICT AND REPORTING ENTITY</h2>
 <h3>REPORTING ENTITY </h3>
-The <span class="field" id="SchoolDistrictName">(School District Name)</span> (School District) was established under the laws of the State of Georgia and operates under the guidance of a school board elected by the voters and a Superintendent appointed by the Board.  The Board is organized as a separate legal entity and has the power to levy taxes and issue bonds.  Its budget is not subject to approval by any other entity.  Accordingly, the School District is a primary government and consists of all the organizations that compose its legal entity.
-The <span class="field" id="SchoolDistrictName">(School District Name)</span> (School District) was established under the laws of the State of Georgia and operates under the guidance of a school board elected by the voters and a Superintendent appointed by the Board.  The Board is not organized as a separate legal entity and does not have the power to levy taxes or issue bonds.  Its budget is subject to approval by the City of <span class="field" id="CityName">(City Name)</span>, Georgia.  Accordingly, the <span class="field" id="SchoolDistrictName">(School District Name)</span> is determined to be a component unit of the City of <span class="field" id="CityName">(City Name)</span>, Georgia, which is the primary government.
+The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> (School District) was established under the laws of the State of Georgia and operates under the guidance of a school board elected by the voters and a Superintendent appointed by the Board.  The Board is organized as a separate legal entity and has the power to levy taxes and issue bonds.  Its budget is not subject to approval by any other entity.  Accordingly, the School District is a primary government and consists of all the organizations that compose its legal entity.
+The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> (School District) was established under the laws of the State of Georgia and operates under the guidance of a school board elected by the voters and a Superintendent appointed by the Board.  The Board is not organized as a separate legal entity and does not have the power to levy taxes or issue bonds.  Its budget is subject to approval by the City of <span class="field" id="CityName">(City Name)</span>, Georgia.  Accordingly, the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> is determined to be a component unit of the City of <span class="field" id="CityName">(City Name)</span>, Georgia, which is the primary government.
+<div id="blended1" ng-class="{deleted: !notes.engagement.blended1}">
 <h3>BLENDED COMPONENT UNIT</h3>
 The <span class="field" id="CharterSchoolName">(Charter School Name)</span> (Charter School) is responsible for the public education of all students attending its school.  The Charter School was created through a contract between the School District and the Charter School whereby all State funding associated with the students attending the Charter School and certain specified local funds are turned over to the Charter School to cover the cost of its operations.  [The financial statements of the Charter School have been reported as a special revenue fund.]  [The financial statements of the Charter School have been included with the School District's General Fund.]  [The financial statements of the Charter School have been included as a discretely presented component unit.]
+</div>
 <h3>BLENDED COMPONENT UNIT </h3>
 The <span class="field" id="CharterSchoolName">(Charter School Name)</span> (Charter School) is responsible for the public education of all students attending its school.  The Charter School was created through a contract between the School District and the Charter School whereby all State funding associated with the students attending the Charter School and certain specified local funds are turned over to the Charter School to cover the cost of its operations.  While the Charter School is believed to be material to the basic financial statements of the School District, the School District (has chosen not to include/was unable to include) the Charter School financial data in its basic financial statements.  To conform to generally accepted accounting principles, material component units should be included within the School District's basic financial statements.
 <h3>BLENDED COMPONENT UNIT </h3>
-The <span class="field" id="SchoolBuildingAuthority">(School Building Authority)</span> was created by House Bill (House Bill Number) during the (Session Year) session of the Georgia General Assembly.  The purpose of the Authority is to provide, acquire, construct, equip, maintain, and operate public service facilities, to acquire the necessary property therefore, both real and personal, and to lease or sell any or all of such facilities, including real and personal property for the benefit of the <span class="field" id="SchoolDistrictName">(School District Name)</span>.  The Authority consists of five members appointed by the governing authority of the <span class="field" id="SchoolDistrictName">(School District Name)</span>.
-The <span class="field" id="SchoolBuildingAuthority">(School Building Authority)</span> is a component unit of the <span class="field" id="SchoolDistrictName">(School District Name)</span> and as such the Authority's financial activity has been blended with the <span class="field" id="SchoolDistrictName">(School District Name)</span>'s basic financial statements.
+The <span class="field" id="SchoolBuildingAuthority">(School Building Authority)</span> was created by House Bill (House Bill Number) during the (Session Year) session of the Georgia General Assembly.  The purpose of the Authority is to provide, acquire, construct, equip, maintain, and operate public service facilities, to acquire the necessary property therefore, both real and personal, and to lease or sell any or all of such facilities, including real and personal property for the benefit of the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span>.  The Authority consists of five members appointed by the governing authority of the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span>.
+The <span class="field" id="SchoolBuildingAuthority">(School Building Authority)</span> is a component unit of the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> and as such the Authority's financial activity has been blended with the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span>'s basic financial statements.
 <h2>NOTE 2:  SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</h2>
 <h3>BASIS OF PRESENTATION</h3>
-The School District's basic financial statements are collectively comprised of the District-wide financial statements, fund financial statements and notes to the basic financial statements of the <span class="field" id="SchoolDistrictName">(School District Name)</span>.
+The School District's basic financial statements are collectively comprised of the District-wide financial statements, fund financial statements and notes to the basic financial statements of the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span>.
 <h4>District-wide Statements:</h4>
 The Statement of Net Position and the Statement of Activities display information about the financial activities of the overall School District, except for fiduciary activities.  Eliminations have been made to minimize the double counting of internal activities.  These statements distinguish between the governmental and business-type activities of the School District.  Governmental activities generally are financed through taxes, intergovernmental revenues, and other nonexchange transactions. Business-type activities are financed in whole or in part by fees charged to employees, students or to external parties.  
 The Statement of Activities presents a comparison between direct expenses and program revenues for each different business-type activity of the School District and each function of the School District's governmental activities.
@@ -106,7 +98,7 @@ The Statement of Activities presents a comparison between direct expenses and pr
 <p>Governmental funds are reported using the current financial resources measurement focus and the modified accrual basis of accounting.  Under this method, revenues are recognized when measurable and available.  The School District considers all revenues reported in the governmental funds to be available if they are collected within sixty days after year-end.  The School District considers all intergovernmental revenues to be available if they are collected within 120 days after year-end.  Property taxes, sales taxes and interest are considered to be susceptible to accrual.  Expenditures are recorded when the related fund liability is incurred, except for principal and interest on general long-term debt, claims and judgments, and compensated absences, which are recognized as expenditures to the extent they have matured. Capital asset acquisitions are reported as expenditures in governmental funds.  Proceeds of general long-term liabilities and acquisitions under capital leases are reported as other financing sources.</p>
 <p>The School District funds certain programs by a combination of specific cost-reimbursement grants, categorical grants, and general revenues.  Thus, when program costs are incurred, both restricted and unrestricted resources are available to finance the program.  It is the School District's policy to first apply grant resources to such programs, followed by cost-reimbursement grants, then general revenues.</p>
 <p>A substantial number of personnel of the School District were employed for a one hundred and ninety day (or corresponding number of contract days) period beginning in August 2013 and ending in early June 2014.  Employment contracts for this employment period typically specify that compensation be paid in twelve equal monthly payments beginning in September 2013 and ending in August 2014.  State grants to fund the State's share of contracts are disbursed to the School District in the same twelve month period.  In fiscal year 2013, these costs were properly recorded for July and August 2013 salary and fringe benefit payments and the related revenue due from the State to fund these contracts in accordance with generally accepted accounting principles.  However, in fiscal year 2014, payments for salaries and fringe benefits made in July and August 2014 and the related revenue due from the State to fund these contracts were not recorded until the subsequent fiscal year.  Generally accepted accounting principles require that revenues be recorded when earned or available and measurable as appropriate and that expenditures or expenses as appropriate be recorded when incurred, rather than when funds are disbursed.</p>
-<p>The net effect of the above accounting treatment resulted in the financial statements of the <span class="field" id="SchoolDistrictName">(School District Name)</span> for fiscal year 2014 reflecting ten months of costs for a majority of General Fund salaries and fringe benefits. This accounting treatment is not in accordance with generally accepted accounting principles.</p>
+<p>The net effect of the above accounting treatment resulted in the financial statements of the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> for fiscal year 2014 reflecting ten months of costs for a majority of General Fund salaries and fringe benefits. This accounting treatment is not in accordance with generally accepted accounting principles.</p>
 <h3>RESTATEMENT OF PRIOR YEAR NET POSITION</h3>
 <p>For fiscal year 2014, the School District made several prior period adjustments due to the adoption of GASB Statement No. 65, as described in "New Accounting Pronouncements" below, which require the restatement of the June 30, 2013, net position in Governmental Activities.  The result is an increase in Net Position at July 1, 2013 of (amount).  This change is in accordance with generally accepted accounting principles.</p>
 <table id="RestatementOfPriorYearNetPosition">Table Placeholder</table>
@@ -136,7 +128,7 @@ The Statement of Activities presents a comparison between direct expenses and pr
 <p>Receivables consist of amounts due from property and sales taxes, grant reimbursements due on Federal, State or other grants for expenditures made but not reimbursed and other receivables disclosed from information available.  Receivables are recorded when either the asset or revenue recognition criteria has been met.  Receivables recorded on the basic financial statements do not include any amounts which would necessitate the need for an allowance for uncollectible receivables.  </p>
 <h3>PROPERTY TAXES</h3>
 <p>The (County) County Board of Commissioners/City of (City) adopted the property tax levy for the 2013 tax digest year (calendar year) on (Levy Date) (levy date) based on property values as of January 1, 2013.  Taxes were due on (Lien Date) (lien date) and could be paid in two installments on (Date) and (Date) (due dates).  Taxes collected within the current fiscal year or within 60 days after year-end on the 2013 tax digest are reported as revenue in the governmental funds for fiscal year 2014.  The (Clerk or Tax Commissioner) bills and collects the property taxes for the School District, withholds (percentage)% of taxes collected as a fee for tax collection and remits the balance of taxes collected to the School District.  Property tax revenues, at the fund reporting level, during the fiscal year ended June 30, 2014, for maintenance and operations amounted to (amount) (and for school bonds amounted to (amount)).</p>
-<p>Tax millage rates levied for the 2013 tax year (calendar year) for the <span class="field" id="SchoolDistrictName">(School District Name)</span> were as follows (a mill equals $1 per thousand dollars of assessed value):</p>
+<p>Tax millage rates levied for the 2013 tax year (calendar year) for the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> were as follows (a mill equals $1 per thousand dollars of assessed value):</p>
 <table id="PropertyTaxes">
 	<ul class="list-inline">
 		<li>School Operations</li>
@@ -187,7 +179,7 @@ The Statement of Activities presents a comparison between direct expenses and pr
 <li>The School District has the ability to modify or approve what services the operator is required to provide, to whom services are provided, and prices or rates that can be charged for those services.</li>
 <li>The School District is entitled to significant residual interest in the service utility of the asset at the end of the arrangement.</li>
 </ul>
-<p>On (Date), <span class="field" id="SchoolDistrictName">(School District Name)</span> entered into an agreement with (company name), whereby (company name) will operate and collect revenues for (bookstore, food service, etc.) operations from service recipients.  (company name) is required to operate the (facility type or name) in accordance with the contractual agreement. Under the terms of the agreement the School District received a lump sum upfront payment of $ (amount) from (company name). Under the terms of the agreement, the School District receives yearly installment payments of (amount) from (company name) (company name), which have an estimated present value of (amount) In addition to any upfront or installment payments, the School District also receives a percentage of annual revenues.  For fiscal year ended June 30, 2014, the School District received (amount) from (company name) (company name) based on sales/collections.  At June 30, 2014, the School District reports the (facility type or name) (facility) as a capital asset with a net carrying value of (amount)   The School District also reports a deferred inflow of resources of (amount)  Finally, as part of the contractual agreement, the School District is responsible for insuring the (facility type or name) (facility) and for providing maintenance services.   The School District is reporting a present value obligation of (amount) for these services. </p>
+<p>On (Date), <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> entered into an agreement with (company name), whereby (company name) will operate and collect revenues for (bookstore, food service, etc.) operations from service recipients.  (company name) is required to operate the (facility type or name) in accordance with the contractual agreement. Under the terms of the agreement the School District received a lump sum upfront payment of $ (amount) from (company name). Under the terms of the agreement, the School District receives yearly installment payments of (amount) from (company name) (company name), which have an estimated present value of (amount) In addition to any upfront or installment payments, the School District also receives a percentage of annual revenues.  For fiscal year ended June 30, 2014, the School District received (amount) from (company name) (company name) based on sales/collections.  At June 30, 2014, the School District reports the (facility type or name) (facility) as a capital asset with a net carrying value of (amount)   The School District also reports a deferred inflow of resources of (amount)  Finally, as part of the contractual agreement, the School District is responsible for insuring the (facility type or name) (facility) and for providing maintenance services.   The School District is reporting a present value obligation of (amount) for these services. </p>
 <h3>NET POSITION</h3>
 <p>The School District's net position in the District-wide Statements is classified as follows:</p>
 <p><b>Net investment in capital assets - </b>This represents the School District's total investment in capital assets, net of outstanding debt obligations related to those capital assets.  To the extent debt has been incurred but not yet expended for capital assets, such amounts are not included as a component of net investment in capital assets.</p>
@@ -318,7 +310,7 @@ The School District has purchased surety bonds to provide additional insurance c
 <table id="SuretyBonds">Table Placeholder</table>
 
 <h2>NOTE (#):  OPERATING LEASES</h2>
-<p><span class="field" id="SchoolDistrictName">(School District Name)</span> has entered into various leases as lessee for (describe general purpose of leases).  These leases are considered for accounting purposes to be operating leases.  Lease expenditures for the year ended June 30, 2014, for governmental funds amounted to (amount) and for enterprise funds amounted to (amount).  Future minimum lease payments for these leases are as follows:</p>
+<p><span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> has entered into various leases as lessee for (describe general purpose of leases).  These leases are considered for accounting purposes to be operating leases.  Lease expenditures for the year ended June 30, 2014, for governmental funds amounted to (amount) and for enterprise funds amounted to (amount).  Future minimum lease payments for these leases are as follows:</p>
 <table id="OperatingLeases">Table Placeholder</table>
 <h2>NOTE (#):  POLLUTION REMEDIATION OBLIGATIONS</h2>
 <p>The School District is the owner of (name of building) located at (location), and is responsible for (describe the general nature of pollution).  The School District has recorded a liability and expense related to this pollution remediation in the amount of (amount), on the Statement of Net Position and on the Statement of Activities.  The estimates of the liabilities are based on a range of expected outlays, net of expected cost recoveries, if any, for the type and amount of pollution contamination detected.  The estimates are reviewed and adjusted periodically for price changes, additional contamination and any other changes detected.  Those adjustments are reported in the Statement of Activities as change in estimated pollution remediation liability.  Pollution remediation liability activity in fiscal year 2014 was as follows:</p><table id="PollutionRemediatoin">Table Placeholder</table>
@@ -329,16 +321,16 @@ Short-term debt activity for the fiscal year is as follows:</p>
 
 <h2>NOTE (#):  LONG-TERM LIABILITIES</h2>
 <h3>CAPITAL LEASES</h3>
-<p>The <span class="field" id="SchoolDistrictName">(School District Name)</span> entered into an agreement dated (date), with the Georgia School Board Association for the construction and subsequent lease of (leased items).  Under the terms of the agreement, the School District will make annual payments through (fiscal year).  The <span class="field" id="SchoolDistrictName">(School District Name)</span> also entered into various lease agreements for (other purpose). These lease agreements qualify as capital leases for accounting purposes, and, therefore, have been recorded at the present value of the future minimum lease payments as of the date of their inception.</p>
+<p>The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> entered into an agreement dated (date), with the Georgia School Board Association for the construction and subsequent lease of (leased items).  Under the terms of the agreement, the School District will make annual payments through (fiscal year).  The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> also entered into various lease agreements for (other purpose). These lease agreements qualify as capital leases for accounting purposes, and, therefore, have been recorded at the present value of the future minimum lease payments as of the date of their inception.</p>
 <h3>COMPENSATED ABSENCES</h3>
 <p>Compensated absences represent obligations of the School District relating to employees' rights to receive compensation for future absences based upon service already rendered.  This obligation relates only to vesting accumulating leave in which payment is probable and can be reasonably estimated.  Typically, the General Fund is the fund used to liquidate this long-term debt.  The School District uses the vesting method to compute compensated absences.</p>
 <p>However, the accumulated compensated absences liability at June 30, 2014, is material to the District-wide financial statements and has not been recorded in these financial statements as required by generally accepted accounting principles.</p><p>
 For fiscal year 2014, the School District began recording the accumulated compensated absences liability at June 30 in the District-wide financial statements.  This is a change in accounting principle.</p>
 <h3>ADVANCE REFUNDING</h3>
-<p>During fiscal year 2014, the <span class="field" id="SchoolDistrictName">(School District Name)</span> issued (amount) in General Obligation Refunding Bonds to advance refund (amount) of outstanding bonds.  The bond issue of (amount) less underwriters and bond issue cost of (amount) provided net proceeds of (amount).  The total net proceeds plus additional debt service funds of (amount) were deposited in an irrevocable trust with an escrow agent to provide for future debt service payments on portions of the (19__ and 19__) Bond issues.  As a result, portions of the 19___ Series Bonds and portions of the 20___  Series Bonds are considered defeased, and the liability for these portions has  been removed from the District-wide Statement of Net Position. The <span class="field" id="SchoolDistrictName">(School District Name)</span> refunded the aforementioned bonds to reduce its total Debt Service payments over (number of years) years beginning subsequent to fiscal year (fiscal year) by (amount) and to obtain an economic gain (difference between the present values of total debt service payments and the old and new debt) of (amount).</p><p>
-The <span class="field" id="SchoolDistrictName">(School District Name)</span> refunded the aforementioned bonds to reduce its total Debt Service payments over (number of years) years beginning subsequent to fiscal year (fiscal year) by (amount).  Due to the nature of this advanced refunding the economic gain cannot be determined.</p>
+<p>During fiscal year 2014, the <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> issued (amount) in General Obligation Refunding Bonds to advance refund (amount) of outstanding bonds.  The bond issue of (amount) less underwriters and bond issue cost of (amount) provided net proceeds of (amount).  The total net proceeds plus additional debt service funds of (amount) were deposited in an irrevocable trust with an escrow agent to provide for future debt service payments on portions of the (19__ and 19__) Bond issues.  As a result, portions of the 19___ Series Bonds and portions of the 20___  Series Bonds are considered defeased, and the liability for these portions has  been removed from the District-wide Statement of Net Position. The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> refunded the aforementioned bonds to reduce its total Debt Service payments over (number of years) years beginning subsequent to fiscal year (fiscal year) by (amount) and to obtain an economic gain (difference between the present values of total debt service payments and the old and new debt) of (amount).</p><p>
+The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> refunded the aforementioned bonds to reduce its total Debt Service payments over (number of years) years beginning subsequent to fiscal year (fiscal year) by (amount).  Due to the nature of this advanced refunding the economic gain cannot be determined.</p>
 <h3>INTERGOVERNMENTAL CONTRACT</h3>
-<p>The <span class="field" id="SchoolDistrictName">(School District Name)</span> entered into a contract with the (contract with) dated (contract date), for the issuance of bonds to provide funds to (purpose of contract) capital outlay projects of the School District.  Under the terms of the contract, the (contract with) issued (amount) (less issuance costs of (amount)) in bonds on behalf of the School District.  The obligation of the School District is absolute and unconditional so long as any of the bonds remain outstanding.  Under the contract, the School District will exercise its power of taxation to the extent necessary to pay the amounts required to be paid by the contract.</p>
+<p>The <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> entered into a contract with the (contract with) dated (contract date), for the issuance of bonds to provide funds to (purpose of contract) capital outlay projects of the School District.  Under the terms of the contract, the (contract with) issued (amount) (less issuance costs of (amount)) in bonds on behalf of the School District.  The obligation of the School District is absolute and unconditional so long as any of the bonds remain outstanding.  Under the contract, the School District will exercise its power of taxation to the extent necessary to pay the amounts required to be paid by the contract.</p>
 <h3>GENERAL OBLIGATION DEBT OUTSTANDING</h3>
 <p>General Obligation Bonds currently outstanding are as follows:</p>
 <table id="GeneralObligationDebtOutstanding">Table Placeholder</table>
@@ -439,15 +431,54 @@ The School District is a defendant in various legal proceedings pertaining to ma
 <h3>PUBLIC SCHOOL EMPLOYEES' RETIREMENT SYSTEM (PSERS)</h3>
 <p>Bus drivers, lunchroom personnel, and maintenance and custodial personnel are members of the Public School Employees' Retirement System of Georgia.  The System is funded by contributions by the employees and by the State of Georgia.  The School District makes no contribution to this plan.</p>
 <h3>DEFINED CONTRIBUTION PLAN</h3>
-<p>In (date), <span class="field" id="SchoolDistrictName">(School District Name)</span> began an employer paid 403(b) annuity plan for the group of employees covered under the Public School Employees' Retirement System (PSERS).  Recognizing that PSERS was a limited defined contribution and defined benefit plan which did not provide for an adequate retirement for this group of employees, it was the Board's desire to supplement the retirement of this group.  </p>
+<p>In (date), <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span> began an employer paid 403(b) annuity plan for the group of employees covered under the Public School Employees' Retirement System (PSERS).  Recognizing that PSERS was a limited defined contribution and defined benefit plan which did not provide for an adequate retirement for this group of employees, it was the Board's desire to supplement the retirement of this group.  </p>
 <p>The Board selected (name of provider) as the provider of this plan.  For each employee covered under PSERS, the Board began contributing to the plan an amount equal to (percentage) percent of the employee's base pay.  </p>
 <p>The employee becomes vested in the plan with (years) years of experience.  Employees who had already achieved (years) years of experience at the time the plan was implemented were vested upon enrollment.  </p>
-<p>Funds accumulated in the employer paid accounts are only available to the employee upon termination of employment and (years) years of service to <span class="field" id="SchoolDistrictName">(School District Name)</span>.  If an employee terminates employment prior to achieving (years) years of service, funds paid on behalf of the non-vested employee are credited back to the Board.</p>
+<p>Funds accumulated in the employer paid accounts are only available to the employee upon termination of employment and (years) years of service to <span class="field" id="SchoolDistrictName">{{notes.engagement.name}}</span>.  If an employee terminates employment prior to achieving (years) years of service, funds paid on behalf of the non-vested employee are credited back to the Board.</p>
 <p>The vendor for the plan changed to (new vendor) in (date).<p>
 <p>Employer contributions for the current fiscal year and the preceding two fiscal years are as follows:</p>
 
 <table id="DefinedContributionPlan">Table Placeholder</table>
+</div>
+<div id="na-editor" class="col-md-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Reporting Entity</h3></div>
+        <div class="panel-body">
+            <form role="form">
+                <div class="form-group">
+                    <label for="schoolDistrictName" >School District Name</label>
 
+                        <input type="text" ng-model="notes.engagement.name" class="form-control" id="schoolDistrictName" placeholder="School District Name">
+
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" ng-model="notes.engagement.blended1">
+                            Blended Component Unit
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Significant Accounting Policies</h3>
+        </div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</div>
 <div class="footer">
         <p>Department of Audits and Accounts 2014</p>
       </div>
