@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html ng-app="schooldistrictnotes">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FY2014 School District Notes</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/School District Notes 2014.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+	    
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">FY2014 School District Notes</a>
+        </div>
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Save</a></li>
+                <li><a href="#">View Tables</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<div ng-controller="NotesController as notes" class="container">
+	
+		<!--
+		<div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">FY2014 School District Notes</h3>
+      </div>
+  		-->
+<h1>{{notes.engagement.name}}</h1>
+<h2>NOTE 1:  DESCRIPTION OF SCHOOL DISTRICT AND REPORTING ENTITY</h2>
+<h3>REPORTING ENTITY </h3>
+The <span class="field" id="SchoolDistrictName">(School District Name)</span> (School District) was established under the laws of the State of Georgia and operates under the guidance of a school board elected by the voters and a Superintendent appointed by the Board.  The Board is organized as a separate legal entity and has the power to levy taxes and issue bonds.  Its budget is not subject to approval by any other entity.  Accordingly, the School District is a primary government and consists of all the organizations that compose its legal entity.
+The <span class="field" id="SchoolDistrictName">(School District Name)</span> (School District) was established under the laws of the State of Georgia and operates under the guidance of a school board elected by the voters and a Superintendent appointed by the Board.  The Board is not organized as a separate legal entity and does not have the power to levy taxes or issue bonds.  Its budget is subject to approval by the City of <span class="field" id="CityName">(City Name)</span>, Georgia.  Accordingly, the <span class="field" id="SchoolDistrictName">(School District Name)</span> is determined to be a component unit of the City of <span class="field" id="CityName">(City Name)</span>, Georgia, which is the primary government.
+<h3>BLENDED COMPONENT UNIT</h3>
+The <span class="field" id="CharterSchoolName">(Charter School Name)</span> (Charter School) is responsible for the public education of all students attending its school.  The Charter School was created through a contract between the School District and the Charter School whereby all State funding associated with the students attending the Charter School and certain specified local funds are turned over to the Charter School to cover the cost of its operations.  [The financial statements of the Charter School have been reported as a special revenue fund.]  [The financial statements of the Charter School have been included with the School District's General Fund.]  [The financial statements of the Charter School have been included as a discretely presented component unit.]
+<h3>BLENDED COMPONENT UNIT </h3>
+The <span class="field" id="CharterSchoolName">(Charter School Name)</span> (Charter School) is responsible for the public education of all students attending its school.  The Charter School was created through a contract between the School District and the Charter School whereby all State funding associated with the students attending the Charter School and certain specified local funds are turned over to the Charter School to cover the cost of its operations.  While the Charter School is believed to be material to the basic financial statements of the School District, the School District (has chosen not to include/was unable to include) the Charter School financial data in its basic financial statements.  To conform to generally accepted accounting principles, material component units should be included within the School District's basic financial statements.
+<h3>BLENDED COMPONENT UNIT </h3>
+The <span class="field" id="SchoolBuildingAuthority">(School Building Authority)</span> was created by House Bill (House Bill Number) during the (Session Year) session of the Georgia General Assembly.  The purpose of the Authority is to provide, acquire, construct, equip, maintain, and operate public service facilities, to acquire the necessary property therefore, both real and personal, and to lease or sell any or all of such facilities, including real and personal property for the benefit of the <span class="field" id="SchoolDistrictName">(School District Name)</span>.  The Authority consists of five members appointed by the governing authority of the <span class="field" id="SchoolDistrictName">(School District Name)</span>.
+The <span class="field" id="SchoolBuildingAuthority">(School Building Authority)</span> is a component unit of the <span class="field" id="SchoolDistrictName">(School District Name)</span> and as such the Authority's financial activity has been blended with the <span class="field" id="SchoolDistrictName">(School District Name)</span>'s basic financial statements.
+<h2>NOTE 2:  SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</h2>
+<h3>BASIS OF PRESENTATION</h3>
+The School District's basic financial statements are collectively comprised of the District-wide financial statements, fund financial statements and notes to the basic financial statements of the <span class="field" id="SchoolDistrictName">(School District Name)</span>.
+<h4>District-wide Statements:</h4>
+The Statement of Net Position and the Statement of Activities display information about the financial activities of the overall School District, except for fiduciary activities.  Eliminations have been made to minimize the double counting of internal activities.  These statements distinguish between the governmental and business-type activities of the School District.  Governmental activities generally are financed through taxes, intergovernmental revenues, and other nonexchange transactions. Business-type activities are financed in whole or in part by fees charged to employees, students or to external parties.  
+The Statement of Activities presents a comparison between direct expenses and program revenues for each different business-type activity of the School District and each function of the School District's governmental activities.
+<ul> 
+<li> Direct expenses are those that are specifically associated with a program or function and, therefore, are clearly identifiable to a particular function.  Indirect expenses (expenses of the School District related to the administration and support of the School District's programs, such as office and maintenance personnel and accounting) are not allocated to programs.</li>
+<li> Program revenues include (a) charges paid by the recipients of goods or services offered by the programs and (b) grants and contributions that are restricted to meeting the operational or capital requirements of a particular program.  Revenues that are not classified as program revenues, including all taxes, are presented as general revenues.</li>
+</ul>
+<h4>Fund Financial Statements:</h4>
+<p>The fund financial statements provide information about the School District's funds, including fiduciary funds.  Eliminations have been made to minimize the double counting of internal activities.  Separate statements for each category (governmental, proprietary, and fiduciary) are presented.  The emphasis of fund financial statements is on major governmental funds.  All remaining governmental funds are aggregated and reported as nonmajor funds.</p>
+<p>The School District reports the following major governmental funds:</p>
+<ul>
+	<li>General Fund is the School District's primary operating fund.  It accounts for and reports all financial resources not accounted for and reported in another fund.</li>
+	<li> Special revenue funds are used to account for and report the proceeds of specific revenue sources that are restricted or committed to expenditure for specified purposes other than capital projects and debt service.</li>
+	<li>District-wide Capital Projects Fund accounts for and reports financial resources including (Education Special Purpose Local Option Sales Tax (ESPLOST), Bond Proceeds, and grants from Georgia State Financing and Investment Commission) that are restricted, committed or assigned to the expenditure for capital outlays, including the acquisition or construction of capital facilities and other capital assets. </li>
+	<li>Debt Service Fund accounts for and reports financial resources that are restricted, committed, or assigned including taxes (property and sales) legally restricted for the payment of general long-term principal and interest.</li>
+</ul>
+<p>Proprietary fund operating revenues, such as charges for services, result from exchange transactions associated with the principal activity of the fund.  Exchange transactions are those in which each party receives and gives up essentially equal values.  Nonoperating revenues, such as subsidies and investment earnings, result from nonexchange transactions or from ancillary activities.  Enterprise fund operating revenues are related to charges for (list items). The primary nonoperating revenues are (list items).</p>
+<p>Principal operating expenses are the costs of providing goods or services and include depreciation of capital assets, (list items).</p>
+<p>The School District reports the following major proprietary fund:</p>
+<ul><li>(list items)</li></ul>
+<p>The School District reports the following fiduciary fund types:</p>
+<ul><li>Private Purpose Trust fund(s) report(s) trust arrangements under which principal and income benefit a (list items). </li>
+<li>Agency funds account for assets held by the School District as an agent for various (list items).</li></ul>
+<h3>BASIS OF ACCOUNTING</h3>
+<p>The basis of accounting determines when transactions are reported on the financial statements.  The District-wide governmental (governmental, proprietary, and fiduciary) financial statements are reported using the economic resources measurement focus and the accrual basis of accounting.  Revenues are recorded when earned and expenses are recorded at the time liabilities are incurred, regardless of when the related cash flows take place.  Nonexchange transactions, in which the School District gives (or receives) value without directly receiving (or giving) equal value in exchange, include property taxes, sales taxes, grants and donations.  On an accrual basis, revenue from property taxes is recognized in the fiscal year for which the taxes are levied.  Revenue from sales taxes is recognized in the fiscal year in which the underlying transaction (sale) takes place.  Revenue from grants and donations is recognized in the fiscal year in which all eligibility requirements have been satisfied.</p>
+<p>Compensated absences and special termination benefit amounts earned during the year are not reported in the basic financial statements.  To conform to generally accepted accounting principles, the amounts earned for compensated absences and special termination benefits should be reported in the basic financial statements.</p>
+<p>The School District uses funds to report on its financial position and the results of its operations.  Fund accounting is designed to demonstrate legal compliance and to aid financial management by segregating transactions related to certain governmental functions or activities.  A fund is a separate accounting entity with a self-balancing set of accounts.</p>
+<p>Governmental funds are reported using the current financial resources measurement focus and the modified accrual basis of accounting.  Under this method, revenues are recognized when measurable and available.  The School District considers all revenues reported in the governmental funds to be available if they are collected within sixty days after year-end.  The School District considers all intergovernmental revenues to be available if they are collected within 120 days after year-end.  Property taxes, sales taxes and interest are considered to be susceptible to accrual.  Expenditures are recorded when the related fund liability is incurred, except for principal and interest on general long-term debt, claims and judgments, and compensated absences, which are recognized as expenditures to the extent they have matured. Capital asset acquisitions are reported as expenditures in governmental funds.  Proceeds of general long-term liabilities and acquisitions under capital leases are reported as other financing sources.</p>
+<p>The School District funds certain programs by a combination of specific cost-reimbursement grants, categorical grants, and general revenues.  Thus, when program costs are incurred, both restricted and unrestricted resources are available to finance the program.  It is the School District's policy to first apply grant resources to such programs, followed by cost-reimbursement grants, then general revenues.</p>
+<p>A substantial number of personnel of the School District were employed for a one hundred and ninety day (or corresponding number of contract days) period beginning in August 2013 and ending in early June 2014.  Employment contracts for this employment period typically specify that compensation be paid in twelve equal monthly payments beginning in September 2013 and ending in August 2014.  State grants to fund the State's share of contracts are disbursed to the School District in the same twelve month period.  In fiscal year 2013, these costs were properly recorded for July and August 2013 salary and fringe benefit payments and the related revenue due from the State to fund these contracts in accordance with generally accepted accounting principles.  However, in fiscal year 2014, payments for salaries and fringe benefits made in July and August 2014 and the related revenue due from the State to fund these contracts were not recorded until the subsequent fiscal year.  Generally accepted accounting principles require that revenues be recorded when earned or available and measurable as appropriate and that expenditures or expenses as appropriate be recorded when incurred, rather than when funds are disbursed.</p>
+<p>The net effect of the above accounting treatment resulted in the financial statements of the <span class="field" id="SchoolDistrictName">(School District Name)</span> for fiscal year 2014 reflecting ten months of costs for a majority of General Fund salaries and fringe benefits. This accounting treatment is not in accordance with generally accepted accounting principles.</p>
+<h3>RESTATEMENT OF PRIOR YEAR NET POSITION</h3>
+<p>For fiscal year 2014, the School District made several prior period adjustments due to the adoption of GASB Statement No. 65, as described in "New Accounting Pronouncements" below, which require the restatement of the June 30, 2013, net position in Governmental Activities.  The result is an increase in Net Position at July 1, 2013 of (amount).  This change is in accordance with generally accepted accounting principles.</p>
+<table id="RestatementOfPriorYearNetPosition">Table Placeholder</table>
+<p>For fiscal year 2014, the School District restated various Capital Assets due to a change in the capitalization policy and errors and omissions.  The School District (increased/decreased) land by (amount).  Additionally, the School District increased, net of accumulated depreciation, buildings and improvements, equipment and land improvements, (amount), (amount) and (amount), respectively.  The result is an increase in Net Position at July 1, 2013, of (amount).  This change is in accordance with generally accepted accounting principles.</p>
+<h3>RESTATEMENT OF PRIOR YEAR NET POSITION/FUND BALANCE</h3>
+<p>For fiscal year 2014, the School District made a variety of prior period adjustments due to various errors or omissions, which require the restatement of the June 30, 2013, net position in Governmental Activities and fund balance in the General Fund.  The result is an increase in Net Position and Fund Balance at July 1, 2013, of (amount) and (amount) respectively.  These changes are in accordance with generally accepted accounting principles.</p>
+
+<h3>NEW ACCOUNTING PRONOUNCEMENTS</h3>
+<p>In fiscal year 2014, the School District adopted the Governmental Accounting Standards Board (GASB) Statement No. 65, Items Previously Reported as Assets and Liabilities.  The provisions of this Statement establish accounting and financial reporting standards that reclassify, as deferred outflows or inflows of resources, certain items that were previously reported as assets and liabilities and recognizes, as outflows or inflows of resources, certain items that were previously reported as assets and liabilities.  (As noted above the School District restated beginning Fund Balance and/or beginning Net Position for the cumulative effect of this accounting change.)</p>
+<h3>CASH AND CASH EQUIVALENTS</h3>
+<h4>Composition of Deposits</h4>
+<p>Cash and cash equivalents consist of cash on hand, demand deposits and short-term investments with original maturities of three months or less from the date of acquisition in authorized financial institutions.  Official Code of Georgia Annotated Section 45-8-14 authorizes the School District to deposit its funds in one or more solvent banks, insured Federal savings and loan associations or insured chartered building and loan associations.</p>
+<h3>INVESTMENTS</h3>
+<h4>Composition of Investments</h4>
+<p>Investments made by the School District in nonparticipating interest-earning contracts (such as certificates of deposit) and repurchase agreements are reported at cost.  Participating interest-earning contracts and money market investments with a maturity at purchase of one year or less are reported at amortized cost.  Both participating interest-earning contracts and money market investments with a maturity at purchase greater than one year and equity investments are reported at fair value.  The Official Code of Georgia Annotated Section 36-83-4 authorizes the School District to invest its funds.  In selecting among options for investment or among institutional bids for deposits, the highest rate of return shall be the objective, given equivalent conditions of safety and liquidity.  Funds may be invested in the following:</p>
+<ol>
+	<li>Obligations issued by the State of Georgia or by other states,</li>
+<li>Obligations issued by the United States government,</li>
+<li>Obligations fully insured or guaranteed by the United States government or a United States government agency,</li>
+<li>Obligations of any corporation of the United States government,</li>
+<li>Prime banker's acceptances,</li>
+<li>The local government investment pool (Georgia Fund 1) administered by the State of Georgia, Office of the State Treasurer,</li>
+<li>Repurchase agreements, and</li>
+<li>Obligations of other political subdivisions of the State of Georgia.</li></ol>
+<p>The School District does not have a formal policy regarding investment policies that address credit risks, concentration of credit risks, interest rate risks or foreign currency risks.</p>
+<h3>RECEIVABLES</h3>
+<p>Receivables consist of amounts due from property and sales taxes, grant reimbursements due on Federal, State or other grants for expenditures made but not reimbursed and other receivables disclosed from information available.  Receivables are recorded when either the asset or revenue recognition criteria has been met.  Receivables recorded on the basic financial statements do not include any amounts which would necessitate the need for an allowance for uncollectible receivables.  </p>
+<h3>PROPERTY TAXES</h3>
+<p>The (County) County Board of Commissioners/City of (City) adopted the property tax levy for the 2013 tax digest year (calendar year) on (Levy Date) (levy date) based on property values as of January 1, 2013.  Taxes were due on (Lien Date) (lien date) and could be paid in two installments on (Date) and (Date) (due dates).  Taxes collected within the current fiscal year or within 60 days after year-end on the 2013 tax digest are reported as revenue in the governmental funds for fiscal year 2014.  The (Clerk or Tax Commissioner) bills and collects the property taxes for the School District, withholds (percentage)% of taxes collected as a fee for tax collection and remits the balance of taxes collected to the School District.  Property tax revenues, at the fund reporting level, during the fiscal year ended June 30, 2014, for maintenance and operations amounted to (amount) (and for school bonds amounted to (amount)).</p>
+<p>Tax millage rates levied for the 2013 tax year (calendar year) for the <span class="field" id="SchoolDistrictName">(School District Name)</span> were as follows (a mill equals $1 per thousand dollars of assessed value):</p>
+<table id="PropertyTaxes">
+	<ul class="list-inline">
+		<li>School Operations</li>
+	<li><div class="input-group">
+		
+		<input type="text" class="form-control">
+		<span class="input-group-addon">.00</span>
+	</div></li>
+	<ul>
+</table>
+<p>Additionally, Title Ad Valorem Tax revenues, at the fund reporting level, amounted to (amount) during fiscal year ended June 30, 2014.</p> 
+<h3>SALES TAXES</h3>
+<p>Local Option Sales Tax revenue, at the fund reporting level, during the fiscal year amounted to (amount) and was recorded in the General Fund.  Local Option Sales Tax is to be used for the maintenance and operation of the School District.</p>
+<p>Education Special Purpose Local Option Sales Tax, at the fund reporting level, during the year amounted to (amount) and is to be used for (capital outlay for educational purposes or debt service.)  This sales tax was authorized by local referendum and the sales tax must be re-authorized at least every five years.</p>
+<p>The City of <span class="field" id="CityName">(City Name)</span> (City Government) sold general obligation bonds to provide advance funding for Capital Outlay Projects associated with issuance of Education Special Purpose Local Option Sales Tax (ESPLOST).  In fiscal year 2014, the School District provided (amount) of ESPLOST proceeds to the City Government for debt services on said general obligation debt.</p>
+<h3>INVENTORIES</h3>
+<h4>Food Inventories</h4>
+<p>Inventories of purchased foods and donated food commodities used in the preparation of meals are not reported on the Financial Statements.  To conform to generally accepted accounting principles, these amounts should be recorded in the basic financial statements.  The effect of this deviation is deemed to be immaterial to the fair presentation of the basic financial statements.</p>
+<p>On the District-wide financial statements, inventories of donated food commodities used in the preparation of meals are reported at their Federally assigned value and purchased foods inventories are reported at cost ((cost method)).  The School District uses the purchases method to account for inventories whereby expenditures are recorded at the time of purchase or when received.  To conform to generally accepted accounting principles, all food inventories should be accounted for using the consumption method whereby an asset is recorded when foods are purchased/received and expenses are recorded at the time the food items are consumed.  The effect of this deviation is deemed to be immaterial to the fair presentation of the basic financial statements.</p>
+<p>On the fund statements, inventories of governmental funds are reported at cost ((cost method)).  The School District uses the purchases method to account for inventories whereby expenditures are recorded at the time of purchase or when received.</p>
+<p>On the basic financial statements, inventories of donated food commodities used in the preparation of meals are reported at their Federally assigned value and purchased foods inventories are reported at cost ((cost method)).  The School District uses the consumption method to account for inventories whereby donated food commodities are recorded as an asset and as revenue when received, and expenses/expenditures are recorded as the inventory items are used.  Purchased foods are recorded as an asset when purchased and expenses/expenditures are recorded as the inventory items are used.</p>
+<p>For fiscal year 2014, the School District began recording inventories of purchased foods and donated food commodities.  The recording of the purchased foods and donated food commodities inventories is a change in accounting principles.</p>
+<h3>PREPAID ITEMS</h3>
+<p>Payments made to vendors for services that will benefit periods subsequent to June 30, 2014, are recorded as prepaid items.  </p>
+<h3>CAPITAL ASSETS</h3>
+<p>Capital assets purchased, including capital outlay costs, are recorded as expenditures in the fund financial statements at the time of purchase (including ancillary charges).  On the District-wide financial statements, all purchased capital assets are valued at cost where historical records are available and at estimated historical cost based on appraisals or deflated current replacement cost where no historical records exist.  Donated capital assets are recorded at estimated fair market value on the date donated.  Disposals are deleted at depreciated recorded cost.  The cost of normal maintenance and repairs that do not add to the value of assets or materially extend the useful lives of the assets is not capitalized.  Depreciation is computed using the straight-line method.  The School District does not capitalize book collections or works of art.  During the fiscal year under review, no events or changes in circumstances affecting a capital asset that may indicate impairment were known to the School District.</p> 
+<p>Capitalization thresholds and estimated useful lives of capital assets reported in the District-wide statements and proprietary funds are as follows:</p>
+
+<table id="CapitalAssets">Table Placeholder</table>
+
+<p>Depreciation is used to allocate the actual or estimated historical cost of all capital assets over estimated useful lives, with the exception of intangible assets which are amortized.</p>
+<p>Amortization of intangible assets such as water, timber, and mineral rights, easements, patents, trademarks, copyrights and internally generated software is computed using the straight-line method over the estimated useful lives of the assets, generally 10 to 20 years.</p>
+<h3>DEFERRED OUTFLOWS/INFLOWS OF RESOURCES</h3>
+<p>In addition to assets, the statement of net position and/or the balance sheet will sometimes report a separate section for deferred outflows of resources.  This separate financial statement element represents a consumption of resources that applies to a future period(s) and therefore will not be recognized as an outflow of resources (expense/expenditure) until then.  [The School District has only one item that qualifies for reporting in this category.  The deferred charge on refunded debt resulting from the difference in the carrying value of the refunded debt and its reacquisition price is deferred and amortized over the shorter of the life of the refunded or refunding debt.]  [The School District did not have any items that qualified for reporting in this category for the year ended June 30, 2014.]</p>
+<p>In addition to liabilities, the statement of net position and/or the balance sheet will sometimes report a separate section for deferred inflows of resources.  This separate financial statement element represents an acquisition of resources that applies to a future period(s) and therefore will not be recognized as an inflow of resources (revenue) until that time.  [The School District has only one type of item, which arises only under a modified accrual basis of accounting that qualifies for reporting in this category.  Accordingly, the item, unavailable revenue, is reporting only in the governmental funds balance sheet.  The governmental funds report unavailable revenues from property taxes and grants and these amounts are deferred and will be recognized as an inflow of resources in the period in which the amounts become available.]</p>
+<h3>COMPENSATED ABSENCES</h3>
+<p>Members of the Teachers' Retirement System of Georgia (TRS) may apply unused sick leave toward early retirement.  The liability for early retirement will be borne by TRS rather than by the individual school districts.  Otherwise, sick leave does not vest with the employee, and no liability is reported in the School District's financial statements.</p>
+<p>Vacation leave of (number of days) days is awarded on a (calendar/fiscal year) basis to all full time personnel employed on a twelve month basis.  No other employees are eligible to earn vacation leave.  Vacation leave not utilized during the (calendar/fiscal year) may be carried over to the next (calendar/fiscal year), providing such vacation leave does not exceed (number of days) days. </p>
+<h3>GENERAL OBLIGATION BONDS</h3>
+<p>The School District issues general obligation bonds to provide funds for the acquisition and construction of major capital facilities.  In the District-wide financial statements, bond premiums and discounts are deferred and amortized over the life of the bonds using the straight-line method.  Bond issuance costs are recognized as an outflow of resources in the fiscal year in which the bonds are issued.</p>
+<p>In the fund financial statements, the School District recognizes bond premiums and discounts, as well as bond issuance costs during the fiscal year bonds are issued.  Premiums received on debt issuances are reported as other financing sources while discounts on debt issuances are reported as other financing uses.  Issuance costs, whether or not withheld from the actual debt proceeds received, are reported as debt service expenditures.  In addition, general obligation bonds have been issued to refund existing general obligation bonds.  General obligation bonds are direct obligations and pledge the full faith and credit of the government.  The outstanding amount of these bonds is recorded in the Statement of Net Position.</p>
+<p>The School District issues general obligation bonds to provide funds for the acquisition and construction of major capital facilities.  In the District-wide and fund financial statements, the School District recognizes bond premiums and discounts, as well as bond issuance costs during the fiscal year bonds are issued.  Premiums received on debt issuances are reported as other financing sources while discounts on debt issuances are reported as other financing uses.  Issuance costs, whether or not withheld from the actual debt proceeds received, are reported as debt service expenditures.  To conform to generally accepted accounting principles, bond premiums and discounts should be amortized over the life of the bonds on the District-wide statements. The effect of this deviation is deemed to be immaterial to the fair presentation of the basic financial statements. In addition, general obligation bonds have been issued to refund existing general obligation bonds. General obligation bonds are direct obligations and pledge the full faith and credit of the government.  The outstanding amount of these bonds is recorded in the Statement of Net Position.</p>
+<h3>SERVICE CONCESSION ARRANGEMENTS</h3>
+<p>Service concession arrangements are between a government (transferor) and a third party (operator) in which all of the following criteria are met:</p>
+<ul>
+<li>The School District conveys to the operator the right and obligation to provide public services through the use and operation of a capital asset in exchange for significant consideration. Significant consideration could be in the form of up-front payments, installment payments, a new facility or improvements to existing facility.</li>
+<li>The operator collects and is compensated by fees from third parties.</li>
+<li>The School District has the ability to modify or approve what services the operator is required to provide, to whom services are provided, and prices or rates that can be charged for those services.</li>
+<li>The School District is entitled to significant residual interest in the service utility of the asset at the end of the arrangement.</li>
+</ul>
+<p>On (Date), <span class="field" id="SchoolDistrictName">(School District Name)</span> entered into an agreement with (company name), whereby (company name) will operate and collect revenues for (bookstore, food service, etc.) operations from service recipients.  (company name) is required to operate the (facility type or name) in accordance with the contractual agreement. Under the terms of the agreement the School District received a lump sum upfront payment of $ (amount) from (company name). Under the terms of the agreement, the School District receives yearly installment payments of (amount) from (company name) (company name), which have an estimated present value of (amount) In addition to any upfront or installment payments, the School District also receives a percentage of annual revenues.  For fiscal year ended June 30, 2014, the School District received (amount) from (company name) (company name) based on sales/collections.  At June 30, 2014, the School District reports the (facility type or name) (facility) as a capital asset with a net carrying value of (amount)   The School District also reports a deferred inflow of resources of (amount)  Finally, as part of the contractual agreement, the School District is responsible for insuring the (facility type or name) (facility) and for providing maintenance services.   The School District is reporting a present value obligation of (amount) for these services. </p>
+<h3>NET POSITION</h3>
+<p>The School District's net position in the District-wide Statements is classified as follows:</p>
+<p><b>Net investment in capital assets - </b>This represents the School District's total investment in capital assets, net of outstanding debt obligations related to those capital assets.  To the extent debt has been incurred but not yet expended for capital assets, such amounts are not included as a component of net investment in capital assets.</p>
+<p><b>Restricted net position - </b>These represent resources for which the School District is legally or contractually obligated to spend resources for bus replacement, continuation of Federal programs, debt service and capital projects in accordance with restrictions imposed by external third parties.</p>
+<p><b>Unrestricted net position - </b>Unrestricted net position represent resources derived from property taxes, sales taxes, grants and contributions not restricted to specific programs, charges for services, and miscellaneous revenues.  These resources are used for transactions relating to the educational and general operations of the School District, and may be used at the discretion of the Board to meet current expenses for those purposes.</p>
+<h3>FUND BALANCES</h3>
+<p>The School District's fund balances are classified as follows:</p>
+<p><b>Nonspendable - </b>Amounts that cannot be spent either because they are in a nonspendable form or because they are legally or contractually required to be maintained intact.</p>
+<p><b>Restricted - </b>Constraints are placed on the use of resources are either (1) externally imposed conditions by creditors, grantors, contributors, or laws and regulations of other governments or (2) imposed by law through constitutional provisions or enabling legislation.</p>
+<p><b>Committed - </b>Amounts that can be used only for specific purposes pursuant to constraints imposed by formal action of the Board of Education.  The Board of Education is the School District's highest level of decision-making authority, and the formal action that is required to be taken to establish, modify, or rescind a fund balance commitment is a resolution approved by the Board.  Committed fund balance also should incorporate contractual obligations to the extent that existing resources in the fund have been specifically committed for use in satisfying those contractual requirements.</p>
+<p><b>Assigned - </b>Amounts that are constrained by the School District's intent to be used for specific purposes, but are neither restricted nor committed. The intent should be expressed by (1) the Board of Education or (2) the budget or finance committee, or the Superintendent, or designee, to assign amounts to be used for specific purposes.</p>
+<p><b>Unassigned - </b>The residual classification for the General Fund.  This classification represents fund balances that has not been assigned to other funds and that has not been restricted, committed, or assigned to specific purposes within the General Fund.</p>
+<p>Fund Balances of the Governmental Funds at June 30, 2014, are as follows:</p>
+<table id="FundBalances">Table placeholder</table>
+<p>It is the goal of the School District to achieve and maintain a committed, assigned, and unassigned fund balance in the general fund at fiscal year end of not less than (percent)% of revenues [or expenditures], not to exceed 15% of the total budget of the subsequent fiscal year, in compliance with Official Code of Georgia Annotated Section  20-2-167(a)5.  If the unassigned fund balance at fiscal year end falls below the goal, the School District shall develop a restoration plan to achieve and maintain the minimum fund balance.</p>
+<p>When multiple categories of fund balance are available for expenditure, the School District will start with the most restricted category and spend those funds first before moving down to the next category with available funds.</p>
+<h3>DEFICIT NET POSITION</h3>
+<p>Unrestricted Net Position balances at June 30, 2014 are as follows:
+<table id="DeficitNetPosition">Table placeholder</table>
+
+<h3>DEFICIT FUND BALANCES</h3>
+<p>Funds and individual nonmajor funds reporting a deficit fund balance at June 30, 2014, are as follows:</p>
+<table id="DeficitFundBalances">Table Placeholder</table>
+<p>(Description of corrective action plan the Board has created to liquidate the deficit(s))</p>
+<h3>USE OF ESTIMATES</h3>
+The preparation of the financial statements in conformity with accounting principles generally accepted in the United States requires management to make estimates and assumptions that affect the amounts reported in the financial statements and accompanying notes.  Actual results may differ from those estimates.
+<h2>NOTE 3:  BUDGETARY DATA</h2>
+<p>The budget is a complete financial plan for the School District's fiscal year, and is based upon careful estimates of expenditures together with probable funding sources.  The budget is legally adopted each year for the general, special revenue, debt service, and capital projects funds.  There is no statutory prohibition regarding over expenditure of the budget at any level.  The budget for all governmental funds, except the various school activity (principal) accounts, is prepared and adopted by fund, function and object.  The legal level of budgetary control was established by the Board at the aggregate [fund] [function]level.  The budget for the General Fund was prepared in accordance with accounting principles generally accepted in the United States of America. The budget for the General Fund was not prepared in accordance with accounting principles generally accepted in the United States of America.</p>
+<p>The budgetary process begins with the School District's administration presenting an initial budget for the Board's review.  The administration makes revisions as necessary based on the Board's guidelines and a tentative budget is approved.  After approval of this tentative budget by the Board, such budget is advertised at least once in a newspaper of general circulation in the locality, as well as the School District's website.  At the next regularly scheduled meeting of the Board after advertisement, the Board receives comments on the tentative budget, makes revisions as necessary and adopts a final budget.  The approved budget is then submitted, in accordance with provisions of Official Code of Georgia Annotated section 20-2-167(c), to the Georgia Department of Education.  The Board may increase or decrease the budget at any time during the year.  All unexpended budget authority lapses at fiscal year-end.</p>
+<p>The Superintendent is authorized by the Board to approve adjustments of no more than (percentage) percent of the amount budgeted for expenditures in any budget function for any fund.  The Superintendent shall report any such adjustments to the Board.  If expenditure of funds in any budget function for any fund is anticipated to be more than (percentage) percent of the budgeted amount, the Superintendent shall request Board approval for the budget amendment.  Any position or expenditure not previously approved in the annual budget that exceeds (amount) shall require Board approval unless the Superintendent deems the position or purchase an emergency.  In such case, the expenditure shall be reported to the Board at its regularly scheduled meeting.  Under no circumstance is the Superintendent or other staff person authorized to spend funds that exceed the total budget without approval by the Board.</p>
+<p>See Schedule 1 - General Fund Schedule of Revenues, Expenditures and Changes in Fund Balances - Budget to Actual for a detail of any over/under expenditures during the fiscal year under review.</p>
+<h3>BUDGETARY/GAAP BASIS RECONCILIATION</h3>
+<p>In the General Fund, accounting principles used in developing budgets on a budgetary basis differ from those used in preparing financial statements in conformity with generally accepted accounting principles (GAAP).</p>
+<p>The primary differences between the budget basis and GAAP basis are: </p>
+<ol><li>State QBE revenue is recorded when received (budget) rather than when susceptible to accrual (GAAP).</li>
+<li>Tax revenue received sixty days subsequent to year-end is recorded when received (budget) rather than when susceptible to accrual (GAAP).</li>
+<li>Salaries and employee benefits paid to teachers under contract are recorded when paid (budget) rather than when the liability is incurred (GAAP).</li>
+<li>Payments made by the State of Georgia for school district employee benefits are recognized as revenues and expenditures under GAAP and are not recognized on the budget basis.  </li>
+<li>Other Difference</li>
+<li>Other Difference</li>
+<li>Other Difference</li>
+</ol>
+<p>Thus, there is an accounting basis difference between the budget and actual Statement of Revenues, Expenditures and Changes in Fund Balances in the General Fund that is reconciled as follows:</p>
+<table id="GAAPReconciliation">Table Placeholder</table>
+<h2>NOTE 4:  DEPOSITS AND INVESTMENTS</h2>
+<h3>COLLATERALIZATION OF DEPOSITS</h3>
+<p>Official Code of Georgia Annotated (O.C.G.A.) Section 45-8-12 provides that there shall not be on deposit at any time in any depository for a time longer than ten days a sum of money which has not been secured by surety bond, by guarantee of insurance, or by collateral.  The aggregate of the face value of such surety bond and the market value of securities pledged shall be equal to not less than 110 percent of the public funds being secured after the deduction of the amount of deposit insurance. If a depository elects the pooled method (O.C.G.A. Section 45-8-13.1) the aggregate of the market value of the securities pledged to secure a pool of public funds shall be not less than 110 percent of the daily pool balance. </p>
+<p>At June 30, 2014, (amount) of deposits were not secured by surety bond, insurance or collateral as specified above.  The School District is working with the affected financial institutions to ensure appropriate levels of collateral are maintained for all of the School District's deposits.</p>
+<p>Acceptable security for deposits consists of any one of or any combination of the following:</p>
+<ol><li>Surety bond signed by a surety company duly qualified and authorized to transact business within the State of Georgia,
+</li><li>Insurance on accounts provided by the Federal Deposit Insurance Corporation,
+</li><li>Bonds, bills, notes, certificates of indebtedness or other direct obligations of the United States or of the State of Georgia,
+</li><li>Bonds, bills, notes, certificates of indebtedness or other obligations of the counties or municipalities of the State of Georgia,
+</li><li>Bonds of any public authority created by the laws of the State of Georgia, providing that the statute that created the authority authorized the use of the bonds for this purpose,
+</li><li>Industrial revenue bonds and bonds of development authorities created by the laws of the State of Georgia, and
+</li><li>Bonds, bills, notes, certificates of indebtedness, or other obligations of a subsidiary corporation of the United States government, which are fully guaranteed by the United States government both as to principal and interest or debt obligations issued by or securities guaranteed by the Federal Land Bank, the Federal Home Loan Bank, the Federal Intermediate Credit Bank, the Central Bank for Cooperatives, the Farm Credit Banks, the Federal Home Loan Mortgage Association, and the Federal National Mortgage Association.</li></ol>
+<h3>CATEGORIZATION OF DEPOSITS</h3>
+<p>Custodial credit risk is the risk that in the event of a bank failure, the School District's deposits may not be returned to it.  The School District does not have a deposit policy for custodial credit risk./The School District's deposit policy for custodial credit risk is (policy). At June 30, 2014, the School District had deposits with a carrying amount of (amount), which includes (amount) in Certificates of Deposit that are reported as Investments, and a bank balance of (amount).  The bank balances insured by Federal depository insurance were (amount) and the bank balances collateralized with securities held by the [pledging institution or by the pledging financial institution's trust department or agent] in the School District's name were (amount).</p>
+<p>
+The amounts exposed to custodial credit risk are classified into three categories as follows:</p>
+<ul class="remove-bullets">
+<li>Category 1 -	Uncollateralized,</li>
+<li>Category 2 -	Cash collateralized with securities held by the pledging financial institution,
+	or</li>
+<li>Category 3 -	Cash collateralized with securities held by the pledging financial institution's trust department or agent but not in the School District's name.</li>
+</ul>
+<p>The School District's deposits by custodial risk category at June 30, 2014, are as follows:</p>
+<table id="CategorizationOfDeposits">Table Placeholder</table>
+<h3>CATEGORIZATION OF INVESTMENTS</h3>
+<p>At June 30, 2014, the carrying value of the School District's total investments was (amount), which is materially the same as fair value.  [This includes (amount) invested in Certificates of Deposit, which are collateralized in the same manner as other cash deposits.]  This investment consisted entirely of funds invested in the Georgia Fund 1 (local government investment pool) administered by the State of Georgia, Office of the State Treasurer which is not required to be categorized since the School District did not own any specific identifiable securities in the pool.  The investment policy of the State of Georgia, Office of the State Treasurer for the Georgia Fund 1 (Primary Liquidity Portfolio and Extended Asset Portfolio) does not provide for investment in derivatives or similar investments. Additional information on the Georgia Fund 1 is disclosed in the State of Georgia Comprehensive Annual Financial Report.  This audit can be obtained from the Georgia Department of Audits and Accounts at http://www.audits.ga.gov/SGD/cafr.html.</p>
+<p>The Primary Liquidity Portfolio consists of Georgia Fund 1 which is not registered with the SEC as an investment company but does operate in a manner consistent with the SEC's Rule 2a-7 of the Investment Company Act of 1940.  The investment is valued at the pool's share price, $1.00 per share.  The pool is an AAAf rated investment pool by Standard and Poor's. The weighted average maturity of Georgia Fund 1 may not exceed 60 days.  The weighted average maturity for Georgia Fund 1 on June 30, 2014, was XX days.</p>
+<p>The Georgia Extended Asset Pool is a variable net asset value investment pool which follows Standard and Poor's criteria for AAAf money market rated funds.  The pool is not registered with the SEC as an investment company.  Net Asset Value (NAV) is calculated daily to determine current share price, which at June 30, 2014 was $2.00 per share.  The weighted average maturity of the fund at June 30, 2014, was XX years.</p>
+<h3>CATEGORIZATION OF INVESTMENTS</h3>
+<p>At June 30, 2014, the carrying value of the School District's total investment was (amount).  [This includes (amount) invested in Certificates of Deposit, which are collateralized in the same manner as other cash deposits.]  The School District's investments as of June 30, 2014, are presented below.  All investments are presented by investment type and debt securities are presented by maturity.</p>
+<table id="CategorizationOfInvestments">Table Placeholder</table>
+<p>The Georgia Fund 1 (local government investment pool) administered by the State of Georgia, Office of the State Treasurer is not required to be categorized since the School District did not own any specific identifiable securities in the pool.  The investment policy of the State of Georgia, Office of the State Treasurer for the Georgia Fund 1 (Primary Liquidity Portfolio and Extended Asset Portfolio) does not provide for investment in derivatives or similar investments.  Additional information on the Georgia Fund 1 is disclosed in the State of Georgia Comprehensive Annual Financial Report.  This audit can be obtained from the Georgia Department of Audits and Accounts at http://www.audits.ga.gov/SGD/cafr.html.
+</p><p>The Primary Liquidity Portfolio consists of Georgia Fund 1 which is not registered with the SEC as an investment company but does operate in a manner consistent with the SEC's Rule 2a-7 of the Investment Company Act of 1940.  The investment is valued at the pool's share price, $1.00 per share.  The pool is an AAAf rated investment pool by Standard and Poor's. The weighted average maturity of Georgia Fund 1 may not exceed 60 days.  The weighted average maturity for Georgia Fund 1 on June 30, 2014, was XX days.</p>
+<p>The Georgia Extended Asset Pool is a variable net asset value investment pool which follows Standard and Poor's criteria for AAAf money market rated funds.  The pool is not registered with the SEC as an investment company.  Net Asset Value (NAV) is calculated daily to determine current share price, which at June 30, 2014 was $2.00 per share.  The weighted average maturity of the fund at June 30, 2014, was XX years.</p>
+<h4>Interest Rate Risk</h4>
+<p>Interest rate risk is the risk that changes in interest rates of debt investment will adversely affect the fair value of an investment. (The School District's policy for managing interest rate risk is (policy)/The School District does not have a formal policy for managing interest rate risk.)</p>
+<h4>Custodial Credit Risk</h4>
+<p>Custodial credit risk for investments is the risk that, in the event of the failure of the counterparty to a transaction, the School District will not be able to recover the value of the investment or collateral securities that are in the possession of an outside party.  (The School District's policy for managing custodial credit risk for investments is (policy)/The School District does not have a formal policy for managing custodial credit risk for investments.)</p><p>
+At June 30, 2014, (amount) of the School District's applicable investments were (1) uninsured and unregistered, with securities held by the counterparty's trust department or agent in the name of the School District and (2) uninsured or unregistered, with securities held by the counterparty, or by its trust department or agent, but not in the School District's name.</p>
+<h4>Credit Quality Risk</h4>
+<p>Credit quality risk is the risk that an issuer or other counterparty to an investment will not fulfill its obligations.  ((The School District's policy for managing credit quality risk is (policy)/The School District does not have a formal policy for managing credit quality risk.))</p><p>
+The investments subject to credit quality risk are reflected below:</P>
+<table id="CreditQualityRisk">Table Placeholder</table>
+<h4>Concentration of Credit Risk</h4>
+<p>Concentration of credit risk is the risk of loss attributed to the magnitude of a government's investment in a single issuer.   ((The School District's policy for managing concentration of credit risk is (policy)/The School District does not have a formal policy for managing concentration of credit risk.))   More than 5% of the School District's investments are in (name of investments).  (This (These) investment(s) is (are) ) (percentage)  (and (percentage)%, respectively,) of the School District's total investments.</p>
+<h4>Foreign Currency Risk</h4>
+<p>Foreign currency risk is the risk that changes in exchange rates will adversely affect the fair value of an investment or deposit.  (The School District's policy for managing foreign currency risk is (policy)/The School District does not have a formal policy for managing foreign currency risk.)</p>
+<h2>NOTE (#):  NON-MONETARY TRANSACTIONS</h2>
+<p>The School District receives food commodities from the United States Department of Agriculture (USDA) for school breakfast and lunch programs.  See note 2 - Inventories. </p>
+<p>The School District receives food commodities from the United States Department of Agriculture (USDA) for school breakfast and lunch programs.  These commodities are recorded at their Federally assigned value.  See Note 2 - Inventories.</p>
+<h2>NOTE (#):  CAPITAL ASSETS</h2>
+<p>The following is a summary of changes in the Capital Assets during the fiscal year:</p>
+<table id="CapitalAssets">Table Placeholder</table>
+<p>Capital assets being acquired under capital leases as of June 30, 2014, are as follows:</p>
+<table id="AcquiredCapitalLeases">Table Placeholder</table>
+<p>Current year depreciation expense by function is as follows:</p>
+<table id="CurrentYearDepreciation">Table Placeholder</table>
+<h2>NOTE (#):  INTERFUND ASSETS AND LIABILITIES</h2>
+<p>Due to and due from other funds are recorded for interfund receivables and payables which arise from interfund transactions.  Interfund balances at June 30, 2014, consisted of the following:</p>
+<table id="InterfundAssetsAndLiabilities">Table Placeholder</table>
+<p>Transfers are used to move sales tax and property tax revenues as required matching funds or to provide supplemental funding for capital construction projects.</p>
+<h2>NOTE (#):  INTERFUND TRANSFERS</h2>
+<p>Interfund transfers for the year ended June 30, 2014, consisted of the following:</p>
+<p>Transfers are used to move property tax revenues collected by the General Fund to (1) the District-wide Capital Projects Fund as required match or supplemental funding source for capital construction projects(2) (interfund transfer item), and to (3) (other interfund transfer item).</p>
+<h2>NOTE (#):  RISK MANAGEMENT</h2>
+<p>The School District is exposed to various risks of loss related to torts; theft of, damage to, and destruction of assets; errors or omissions; job related illness or injuries to employees; acts of God and unemployment compensation.</p>
+<p>The School District has obtained commercial insurance for risk of loss associated with torts, assets, errors or omissions, job related illness or injuries to employees and acts of God.  However, the errors or omissions policy excludes coverage for sexual harassment and discrimination.  The School District has neither significantly reduced coverage for these risks nor incurred losses (settlements) which exceeded the School District's insurance coverage in any of the past three years.</p>
+<p>For the (year) fiscal year, a natural disaster claim (flood damage) filed by the School District exceeded commercial insurance coverage by (amount).  Federal Emergency Management Agency (FEMA) funds in the amount of (amount) have been awarded to the School District with the remainder of the loss being absorbed by the School District.  Settled claims have not exceeded commercial insurance for the two years preceding fiscal year 2014.</p>
+<p>The School District participates in the Georgia School Boards Association Risk and Insurance Management System, a public entity risk pool organized on July 1, 1994, to develop and administer a plan to reduce risk of loss on account of general liability, motor vehicle liability, or property damage, including safety engineering and other loss prevention and control techniques, and to administer one or more groups of self-insurance funds, including the processing and defense of claims brought against members of the system.  The School District pays an annual premium to the system for its general insurance coverage.  Additional coverage is provided through agreements by the system with other companies according to their specialty for property, boiler and machinery (including coverage for flood and earthquake), general liability (including coverage for sexual harassment, molestation and abuse), errors and omissions, crime and automobile risks.  Payment of excess insurance for the system varies by line of coverage.</p><p>
+For the current fiscal year, due to the costs of available coverage, the School District significantly reduced coverage for (type of insurance).</p><p>
+The School District has elected to self-insure for all losses related to torts, assets and acts of God.  In addition, the School District has elected to self-insure for errors or omissions, which includes, among other risks, risks for sexual harassment and discrimination.  The School District has not experienced any losses related to these risks in the past three years. </p><p>
+The School District has established a limited risk management program for workers' compensation claims.  In connection with this program, a self-insurance reserve has been established within the General Fund by the School District.  The School District accounts for claims within the General Fund with expenses/expenditures and liability being reported when it is probable that a loss has occurred, and the amount of that loss can be reasonably estimated.  (An excess coverage insurance policy covers individual claims in excess of (amount) loss per occurrence, up to the statutory limit.) </p><p>
+The School District has established a limited risk management program for workers' compensation claims.  A premium is charged when needed by the General Fund to each user program on the basis of the percentage of that program's payroll to total payroll in order to cover estimated claims budgeted by management based on known claims and prior experience.  The School District accounts for claims with expenses/expenditures and liability being reported when it is probable that a loss has occurred, and the amount of that loss can be reasonably estimated.  (An excess coverage insurance policy covers individual claims in excess of (amount) loss per occurrence, up to the statutory limit.) </p><p>
+The School District has established a limited risk management program for workers' compensation claims.  A premium is charged when needed by the Internal Service Fund to each user program on the basis of the percentage of that program's payroll to total payroll in order to cover estimated claims budgeted by management based on known claims and prior experience.  The School District accounts for claims with expense and liability being reported when it is probable that a loss has occurred, and the amount of that loss can be reasonably estimated.  (An excess coverage insurance policy covers individual claims in excess of (amount) loss per occurrence, up to the statutory limit.) </p><p>
+Changes in the workers' compensation claims liability during the last two fiscal years are as follows:
+</p>
+<table id="WorkersCompensationClaimsLiability">Table Placeholder</table>
+<p>The School District is self-insured with regard to unemployment compensation claims.   In connection with this program, a self-insurance reserve has been established within the General Fund by the School District. The School District accounts for claims within the General Fund with expenses/expenditures and liability being reported when it is probable that a loss has occurred, and the amount of that loss can be reasonably estimated.</p><p>
+The School District is self-insured with regard to unemployment compensation claims.  A premium is charged when needed by the General Fund to each user program on the basis of the percentage of that fund's payroll to total payroll in order to cover estimated claims budgeted by management based on known claims and prior experience.  The School District accounts for claims with expenses/expenditures and liability being reported when it is probable that a loss has occurred, and the amount of that loss can be reasonably estimated.</p><p>
+Changes in the unemployment compensation claims liability during the last two fiscal years are as follows:</p><table id="UnemploymentCompensation">Table Placeholder</table>
+<p>The School District participates in the Georgia School Boards Association Workers' Compensation Fund, a public entity risk pool organized on July 1, 1992, to develop, implement, and administer a program of workers' compensation self-insurance for its member organizations. The School District pays an annual premium to the Fund for its Workers' Compensation insurance coverage.  Excess insurance coverage is provided through an agreement by the Fund with the Safety National Casualty Corporation to provide coverage for potential losses sustained by the Fund in excess of $550 thousand loss per occurrence, up to the statutory limit.  Employers' Liability insurance coverage is also provided by Safety National Casualty Corporation to provide coverage for potential losses sustained by the Fund in excess of $550 thousand loss per occurrence, up to $2 million.  In addition to the $550,000 per occurrence retention, the Fund also retains an additional $150,000 per year corridor retention. </p><p>
+The School District participates in the Georgia Education Workers' Compensation Trust, a public entity risk pool organized on December 1, 1991, to develop, implement and administer a program of workers' compensation self-insurance for its member organizations.  The School District pays an annual premium to the Trust for its general worker's compensation insurance coverage.  Specific excess of loss insurance coverage is provided through an agreement by the Trust with the Safety National Casualty Company to provide coverage for potential losses sustained by the Trust in excess of $1 million loss per occurrence, up to the statutory limit.  Employers' Liability insurance coverage is also provided with limits of $2 million.  The Trust covers the first $1 million of each Employers liability claim with Safety National providing additional Employers Liability limits up to a $2 million per occurrence maximum.  Safety National Casualty Company also provides $2 million in aggregate coverage to the Trust, attaching at 110% of the loss fund and based on the Fund's annual normal premium.</p><p>
+The School District has purchased surety bonds to provide additional insurance coverage as follows:</p>
+<table id="SuretyBonds">Table Placeholder</table>
+
+<h2>NOTE (#):  OPERATING LEASES</h2>
+<p><span class="field" id="SchoolDistrictName">(School District Name)</span> has entered into various leases as lessee for (describe general purpose of leases).  These leases are considered for accounting purposes to be operating leases.  Lease expenditures for the year ended June 30, 2014, for governmental funds amounted to (amount) and for enterprise funds amounted to (amount).  Future minimum lease payments for these leases are as follows:</p>
+<table id="OperatingLeases">Table Placeholder</table>
+<h2>NOTE (#):  POLLUTION REMEDIATION OBLIGATIONS</h2>
+<p>The School District is the owner of (name of building) located at (location), and is responsible for (describe the general nature of pollution).  The School District has recorded a liability and expense related to this pollution remediation in the amount of (amount), on the Statement of Net Position and on the Statement of Activities.  The estimates of the liabilities are based on a range of expected outlays, net of expected cost recoveries, if any, for the type and amount of pollution contamination detected.  The estimates are reviewed and adjusted periodically for price changes, additional contamination and any other changes detected.  Those adjustments are reported in the Statement of Activities as change in estimated pollution remediation liability.  Pollution remediation liability activity in fiscal year 2014 was as follows:</p><table id="PollutionRemediatoin">Table Placeholder</table>
+<h2>NOTE (#):  SHORT-TERM DEBT</h2>
+<p>The School District (issues tax anticipation notes and obtains temporary loans) in advance of property tax collections, depositing the proceeds in its General Fund.  This short-term debt is to provide cash for operations until property tax collections are received by the School District.  Article IX, Section V, Paragraph V of the Constitution of the State of Georgia limits the aggregate amount of short-term debt to 75 percent of the total gross income from taxes collected in the preceding year and requires all short-term debt to be repaid no later than December 31 of the calendar year in which the debt was incurred.</p><p>
+Short-term debt activity for the fiscal year is as follows:</p>
+<table id="ShortTermDebt">Table Placeholder</table>
+
+<h2>NOTE (#):  LONG-TERM LIABILITIES</h2>
+<h3>CAPITAL LEASES</h3>
+<p>The <span class="field" id="SchoolDistrictName">(School District Name)</span> entered into an agreement dated (date), with the Georgia School Board Association for the construction and subsequent lease of (leased items).  Under the terms of the agreement, the School District will make annual payments through (fiscal year).  The <span class="field" id="SchoolDistrictName">(School District Name)</span> also entered into various lease agreements for (other purpose). These lease agreements qualify as capital leases for accounting purposes, and, therefore, have been recorded at the present value of the future minimum lease payments as of the date of their inception.</p>
+<h3>COMPENSATED ABSENCES</h3>
+<p>Compensated absences represent obligations of the School District relating to employees' rights to receive compensation for future absences based upon service already rendered.  This obligation relates only to vesting accumulating leave in which payment is probable and can be reasonably estimated.  Typically, the General Fund is the fund used to liquidate this long-term debt.  The School District uses the vesting method to compute compensated absences.</p>
+<p>However, the accumulated compensated absences liability at June 30, 2014, is material to the District-wide financial statements and has not been recorded in these financial statements as required by generally accepted accounting principles.</p><p>
+For fiscal year 2014, the School District began recording the accumulated compensated absences liability at June 30 in the District-wide financial statements.  This is a change in accounting principle.</p>
+<h3>ADVANCE REFUNDING</h3>
+<p>During fiscal year 2014, the <span class="field" id="SchoolDistrictName">(School District Name)</span> issued (amount) in General Obligation Refunding Bonds to advance refund (amount) of outstanding bonds.  The bond issue of (amount) less underwriters and bond issue cost of (amount) provided net proceeds of (amount).  The total net proceeds plus additional debt service funds of (amount) were deposited in an irrevocable trust with an escrow agent to provide for future debt service payments on portions of the (19__ and 19__) Bond issues.  As a result, portions of the 19___ Series Bonds and portions of the 20___  Series Bonds are considered defeased, and the liability for these portions has  been removed from the District-wide Statement of Net Position. The <span class="field" id="SchoolDistrictName">(School District Name)</span> refunded the aforementioned bonds to reduce its total Debt Service payments over (number of years) years beginning subsequent to fiscal year (fiscal year) by (amount) and to obtain an economic gain (difference between the present values of total debt service payments and the old and new debt) of (amount).</p><p>
+The <span class="field" id="SchoolDistrictName">(School District Name)</span> refunded the aforementioned bonds to reduce its total Debt Service payments over (number of years) years beginning subsequent to fiscal year (fiscal year) by (amount).  Due to the nature of this advanced refunding the economic gain cannot be determined.</p>
+<h3>INTERGOVERNMENTAL CONTRACT</h3>
+<p>The <span class="field" id="SchoolDistrictName">(School District Name)</span> entered into a contract with the (contract with) dated (contract date), for the issuance of bonds to provide funds to (purpose of contract) capital outlay projects of the School District.  Under the terms of the contract, the (contract with) issued (amount) (less issuance costs of (amount)) in bonds on behalf of the School District.  The obligation of the School District is absolute and unconditional so long as any of the bonds remain outstanding.  Under the contract, the School District will exercise its power of taxation to the extent necessary to pay the amounts required to be paid by the contract.</p>
+<h3>GENERAL OBLIGATION DEBT OUTSTANDING</h3>
+<p>General Obligation Bonds currently outstanding are as follows:</p>
+<table id="GeneralObligationDebtOutstanding">Table Placeholder</table>
+<p>Promissory notes - As authorized in a county-wide referendum, the School District has entered into a lending agreement with a commercial lending institution.  The debt at June 30, 2014, associated with this agreement was as follows:</p>
+<table id="PromissoryNotes">Table Placeholder</table>
+<p>Voters have authorized (amount) in general obligation debt for (purpose of authorized debt) which was not issued as of June 30, 2014.</p><p>
+The changes in Long-Term Liabilities during the fiscal year ended June 30, 2014, were as follows:</p>
+<table id="ChangesInLongTermLiabilities">Table Placeholder</table>
+<p>At June 30, 2014, payments due by fiscal year which includes principal and interest for these items are as follows:</p>
+
+<h2>NOTE (#):  PRIOR YEAR DEFEASEMENT OF DEBT</h2>
+<p>In (fiscal years (year) and (year)), the School District defeased certain general obligation bonds by placing the proceeds of new bonds in an irrevocable trust to provide for all future debt service payments on the old bonds. Accordingly, the trust account assets and the liability for the defeased bonds are not included in the School District's basic financial statements.  On (date), a portion of these bonds were redeemed.  At June 30, 2014, (amount) of bonds are outstanding and are considered defeased.  At June 30, 2014, none of these bonds are outstanding or considered defeased. </p>
+<h2>NOTE (#):  ON-BEHALF PAYMENTS</h2>
+<p>The School District has recognized revenues and costs in the amount of (amount) for health insurance and retirement contributions paid on the School District's behalf by the following State Agencies.</p>
+<ul class="remove-bullets">
+<li>Georgia Department of Education</li>
+	<ul class="remove-bullets">
+	<li>Paid to the Georgia Department of Community Health</li>
+		<ul class="remove-bullets">
+		<li>For Health Insurance of Certificated Personnel</li>
+			<ul class="remove-bullets">
+			<li>In the amount of (amount)</li>
+			</ul>
+		</ul>
+	</ul>
+
+	<ul class="remove-bullets">
+	<li>Paid to the Teachers' Retirement System of Georgia</li>
+		<ul class="remove-bullets">
+		<li>For Teachers' Retirement System (TRS) Employer's Cost</li>
+			<ul class="remove-bullets">
+			<li>In the amount of (amount)</li>
+			</ul>
+		</ul>
+	</ul>
+</ul>
+
+
+<ul class="remove-bullets">
+<li>Office of the State Treasurer</li>
+	<ul class="remove-bullets">
+	<li>Paid to the Public School Employees' Retirement System</li>
+		<ul class="remove-bullets">
+		<li>For Public School Employees' Retirement (PSERS) Employer's Cost</li>
+			<ul class="remove-bullets">
+			<li>In the amount of (amount)</li>
+			</ul>
+		</ul>
+	</ul>
+</ul>
+
+<p>Funds paid to the Georgia Department of Community Health by the Georgia Department of Education on behalf of the School District are reported as part of the Quality Basic Education revenue allotments on Schedule 3 - Schedule of State Revenue.</p>
+
+<h2>NOTE (#): (SPECIAL/EXTRAORDINARY) ITEMS</h2>
+<p>Click here to enter text.</p>
+<h2>NOTE (#):  SIGNIFICANT COMMITMENTS</h2>
+<p>The following is an analysis of significant outstanding construction or renovation contracts executed by the School District as of June 30, 2014, together with funding available: </p>
+<p>The amounts described in this note are not reflected in the basic financial statements.</p>
+<h2>NOTE (#):  SIGNIFICANT CONTINGENT LIABILITIES</h2>
+<h3>ARBITRAGE REBATE TAX</h3>
+<p>The Federal Tax Reform Act of 1986 requires issuers of tax-exempt debt to make payments to the United States Treasury of Investment Income received at yields that exceed the issuer's tax-exempt borrowing rates.  The U. S. Treasury requires payment every five years.  The estimated future liability of (amount) at June 30, 2014, is based on tax exempt debt subject to the Tax Reform Act.  The estimated liability will be updated annually for any tax-exempt issuances or changes in yields through (date), at which time payment of the final calculated liability for the five-year period is required to be remitted.</p> <p> 
+Amounts received or receivable principally from the Federal government are subject to audit and review by grantor agencies.  This could result in requests for reimbursement to the grantor agency for any costs which are disallowed under grant terms.  The School District believes that such disallowances, if any, will be immaterial to its overall financial position.</ul>
+The School District is a defendant in various legal proceedings pertaining to matters incidental to the performance of routine School District operations.  The ultimate disposition of these proceedings is not presently determinable, but is not believed to be material to the basic financial statements.</ul>
+(Describe material ongoing litigation)</p>
+<h2>NOTE (#):  RELATED PARTY TRANSACTIONS</h2>
+<p>Click here to enter text.</p>
+<h2>NOTE (#):  SUBSEQUENT EVENTS</h2>
+<p>In the subsequent fiscal year, voters authorized the School District to issue general obligation bonds in the amount of (amount).  The proceeds from these bonds will be used for (purpose).</p>
+<p>In fiscal year 2015, the School District will adopt Governmental Account Standards Board (GASB) Statement No. 68, Accounting and Financial Reporting for Pensions.  The provisions of this Statement establish accounting and financial reporting standards for pensions that are provided to the employees of state and local governmental employers through pension plans that are administered through trusts. Implementation of this statement will require the School District to record a liability for its proportionate share of the Net Pension Liability of pension plans in which it is a member.  Actuarial estimates are currently being made to determine the School District's liability, the effects of which are believed to be material.</p>
+<p>(Describe other subsequent events)</p>
+<h2>NOTE (#):  POST-EMPLOYMENT BENEFITS</h2>
+<h3>GEORGIA SCHOOL PERSONNEL POST-EMPLOYMENT HEALTH BENEFIT FUND</h3>
+<p><b>Plan Description.</b>  The Georgia School Personnel Post-employment Health Benefit Fund (School OPEB Fund) is a cost-sharing multiple-employer defined benefit post-employment healthcare plan that covers eligible former employees of public school systems, libraries and regional educational service agencies.  The School OPEB Fund provides health insurance benefits to eligible former employees and their qualified beneficiaries through the State Employees Health Benefit Plan administered by the Department of Community Health.  The Official Code of Georgia Annotated (O.C.G.A.) assigns the authority to establish and amend the benefit provisions of the group health plans, including benefits for retirees, to the Board of Community Health (Board).  The Department of Community Health, which includes the School OPEB Fund, issues a separate stand alone financial audit report and a copy can be obtained from the Georgia Department of Audits and Accounts.</p>
+<p><b>Funding Policy. </b> The contribution requirements of plan members and participating employers are established by the Board in accordance with the current Appropriations Act and may be amended by the Board.  Contributions of plan members or beneficiaries receiving benefits vary based on plan election, dependent coverage, and Medicare eligibility and election.  For members with fewer than five years of service as of January 1, 2013, contributions also vary based on years of service. On average, members with five years or more of service as of January 1, 2013, pay approximately 25 percent of the cost of the health insurance coverage.  In accordance with the Board resolution dated December 8, 2011, for members with fewer than five years of service as of January 1, 2013, the State provides a premium subsidy in retirement that ranges from 0% for fewer than 10 years of service to 75% (but no greater than the subsidy percentage offered to active employees) for 30 or more years of service.  The subsidy for eligible dependents ranges from 0% to 55% (but no greater than the subsidy percentage offered to dependents of active employees minus 20%).  No subsidy is available to Medicare eligible members not enrolled in a Medicare Advantage Option.  The Board of Community Health sets all member premiums by resolution and in accordance with the law and applicable revenue and expense projections.  Any subsidy policy adopted by the Board may be changed at any time by Board resolution and does not constitute a contract or promise of any amount of subsidy.</p>
+<p>Participating employers are statutorily required to contribute in accordance with the employer contribution rates established by the Board.  The contribution rates are established to fund all benefits due under the health insurance plans for both active and retired employees based on projected "pay-as-you-go" financing requirements.  Contributions are not based on the actuarially calculated annual required contribution (ARC) which represents a level of funding that, if paid on an ongoing basis, is projected to cover normal cost each year and amortize any unfunded actuarial liabilities (or funding excess) over a period not to exceed thirty years.</p>
+<p>The combined active and retiree contribution rates established by the Board for employers participating in the School OPEB Fund were as follows for the fiscal year ended June 30, 2014:</p>
+<p>For certificated teachers, librarians and regional educational service agencies and certain other eligible participants:</p>
+<ul class="list-inline">
+<li><b>July 1, 2013 - June 30, 2014</b></li>
+<li>$945 per member per month</li>
+</ul>
+<p>For non-certificated school personnel:</p>
+<ul class="list-inline"><li><b>July 1, 2013 - June 30,2014</b></li>
+<li>$446.20 per member per month</li>
+</ul>
+<p>No additional contribution was required by the Board for fiscal year 2014 nor contributed to the School OPEB Fund to prefund retiree benefits.  Such additional contribution amounts are determined annually by the Board in accordance with the School plan for other post-employment benefits and are subject to appropriation.</p>
+<p>The School District's combined active and retiree contributions to the health insurance plans, which equaled the required contribution, for the current fiscal year and the preceding two fiscal years were as follows:</p>
+<table id="PostEmploymentBenefits">Table Placeholder</table>
+<h2>NOTE (#):  RETIREMENT PLANS</h2>
+<h3>TEACHERS' RETIREMENT SYSTEM OF GEORGIA (TRS) </h3>
+<p><b>Plan Description.</b>  The TRS is a cost-sharing multiple-employer defined benefit plan created in 1943 by an act of the Georgia General Assembly to provide retirement benefits for qualifying employees in educational service.  A Board of Trustees comprised of active and retired members and ex-officio State employees is ultimately responsible for the administration of TRS.  The Teachers' Retirement System of Georgia issues a separate stand alone financial audit report and a copy can be obtained from the Georgia Department of Audits and Accounts.</p>
+<p>On October 25, 1996, the Board created the Supplemental Retirement Benefits Plan of the Georgia Teachers' Retirement System (SRBP-TRS).  SRBP-TRS was established as a qualified excess benefit plan in accordance with Section 415 of the Internal Revenue Code (IRC) as a portion of TRS.  The purpose of SRBP-TRS is to provide retirement benefits to employees covered by TRS whose benefits are otherwise limited by IRC Section 415.  Beginning July 1, 1997, all members and retired former members in TRS are eligible to participate in the SRBP-TRS whenever their benefits under TRS exceed the IRC Section 415 imposed limitation on benefits.</p>
+<p>TRS provides service retirement, disability retirement, and survivor's benefits.  The benefit structure of TRS is defined and may be amended by State statute.  A member is eligible for normal service retirement after 30 years of creditable service, regardless of age, or after 10 years of service and attainment of age 60.  A member is eligible for early retirement after 25 years of creditable service.</p>
+<p>Normal retirement (pension) benefits paid to members are equal to 2% of the average of the member's two highest paid consecutive years of service, multiplied by the number of years of creditable service up to 40 years.  Early retirement benefits are reduced by the lesser of one-twelfth of 7% for each month the member is below age 60 or by 7% for each year or fraction thereof by which the member has less than 30 years of service.  It is also assumed that certain cost-of-living adjustments, based on the Consumer Price Index, will be made in future years.  Retirement benefits are payable monthly for life.  A member may elect to receive a partial lump-sum distribution in addition to a reduced monthly retirement benefit.  Death, disability and spousal benefits are also available.  </p>
+<p><b>Funding Policy.</b>  TRS is funded by member and employer contributions as adopted and amended by the Board of Trustees.  Members become fully vested after 10 years of service.  If a member terminates with less than 10 years of service, no vesting of employer contributions occurs, but the member's contributions may be refunded with interest.    Member contributions are limited by State law to not less than 5% or more than 6% of a member's earnable compensation.  Member contributions as adopted by the Board of Trustees for the fiscal year ended June 30, 2014, were 6.00% of annual salary.  Employer contributions required for fiscal year 2014 were 12.28% of annual salary as required by the June 30, 2011, actuarial valuation. </p>
+<p>Employer contributions for the current fiscal year and the preceding two fiscal years are as follows:</p>
+<table id="RetirementPlans">Table Placeholder</table>
+<h3>PUBLIC SCHOOL EMPLOYEES' RETIREMENT SYSTEM (PSERS)</h3>
+<p>Bus drivers, lunchroom personnel, and maintenance and custodial personnel are members of the Public School Employees' Retirement System of Georgia.  The System is funded by contributions by the employees and by the State of Georgia.  The School District makes no contribution to this plan.</p>
+<h3>DEFINED CONTRIBUTION PLAN</h3>
+<p>In (date), <span class="field" id="SchoolDistrictName">(School District Name)</span> began an employer paid 403(b) annuity plan for the group of employees covered under the Public School Employees' Retirement System (PSERS).  Recognizing that PSERS was a limited defined contribution and defined benefit plan which did not provide for an adequate retirement for this group of employees, it was the Board's desire to supplement the retirement of this group.  </p>
+<p>The Board selected (name of provider) as the provider of this plan.  For each employee covered under PSERS, the Board began contributing to the plan an amount equal to (percentage) percent of the employee's base pay.  </p>
+<p>The employee becomes vested in the plan with (years) years of experience.  Employees who had already achieved (years) years of experience at the time the plan was implemented were vested upon enrollment.  </p>
+<p>Funds accumulated in the employer paid accounts are only available to the employee upon termination of employment and (years) years of service to <span class="field" id="SchoolDistrictName">(School District Name)</span>.  If an employee terminates employment prior to achieving (years) years of service, funds paid on behalf of the non-vested employee are credited back to the Board.</p>
+<p>The vendor for the plan changed to (new vendor) in (date).<p>
+<p>Employer contributions for the current fiscal year and the preceding two fiscal years are as follows:</p>
+
+<table id="DefinedContributionPlan">Table Placeholder</table>
+
+<div class="footer">
+        <p>Department of Audits and Accounts 2014</p>
+      </div>
+</div>
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+	    
+	    
+
+	</body>
+</html>
