@@ -6,9 +6,10 @@
 	});
 
 	var school = {
-		name: 'Peach County Board of Education',
+		name: 'School District Name',
 		contact: 'Peach Lady',
 		note1: false,
+        blended1: true,
 	}
 
 })();
