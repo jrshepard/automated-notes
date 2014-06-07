@@ -1,7 +1,12 @@
 /* Custom button
 -------------------------------------------------- */
 .field {
-	background-color: lightgrey;
+	background-color: lightblue;
+}
+
+.deleted {
+    text-decoration: line-through;
+    color: red;
 }
 
 .remove-bullets {
@@ -43,11 +48,10 @@ body {
 
 /* Customize container */
 @media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+
 }
 
 table {
 	margin-bottom: 10px;
 }
+
