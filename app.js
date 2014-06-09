@@ -10,6 +10,11 @@
 		contact: 'Peach Lady',
 		note1: false,
         blended1: true,
+        componentUnit: false,
+        cityName: '',
+        materialCharterSchool: false,
+        charterSchoolName: '',
+        charterSchoolDataInFinancialStatements: false,
 	}
 
 })();

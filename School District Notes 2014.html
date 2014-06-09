@@ -450,14 +450,59 @@ The School District is a defendant in various legal proceedings pertaining to ma
                     </a>
                 </h4>
             </div>
-            <div id="reprortingEntityCollapse" class="panel-collapse collapse in">
+            <div id="reprortingEntityCollapse" class="panel-collapse collapse">
                 <div class="panel-body">
                     <form role="form">
                         <div class="form-group">
                             <label for="schoolDistrictName" >School District Name</label>
-
                             <input type="text" ng-model="notes.engagement.name" class="form-control" id="schoolDistrictName" placeholder="School District Name" required>
-
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    The School District is a component unit of the city.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cityName" >City Name</label>
+                            <input type="text" ng-model="notes.engagement.cityName" class="form-control" id="cityName" placeholder="City Name" disabled>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    The School District has a material charter school.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="charterSchoolName" >Charter School Name</label>
+                            <input type="text" ng-model="notes.engagement.charterSchoolName" class="form-control" id="charterSchoolName" placeholder="Charter School Name" disabled>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Charter School data is included in financial statements.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="includeCharterSchoolData">The school district</label>
+                            <select class="form-control" id="includeCharterSchoolData">
+                                <option>has chosen not to include the data</option>
+                                <option>is unable to include the data</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="charterSchoolData">The financial statements of the charter school</label>
+                            <select class="form-control" id="charterSchoolData">
+                                <option>have been included as a discretely presented component unit</option>
+                                <option>have been included in the general fund</option>
+                                <option>have been included in the special revenue fund</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <div class="checkbox">
